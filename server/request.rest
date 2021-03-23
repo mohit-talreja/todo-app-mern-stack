@@ -1,0 +1,20 @@
+POST http://localhost:1000/createtodo
+Content-Type: application/json
+
+{
+    "title": "Read Book At 8:00 AM."
+}
+
+###
+GET http://localhost:1000/readtodos
+
+###
+GET http://localhost:1000/readtodo/6058d604bc94cd1dc0799c1b
+
+###
+PUT http://localhost:1000/updatetodo/6059c87e06eb6251947da061
+Content-Type: application/json
+
+{
+    "title": "Play Cricket At 5:00 PM."
+}
