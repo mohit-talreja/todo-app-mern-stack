@@ -1,0 +1,26 @@
+POST http://localhost:1000/createtodo
+Content-Type: application/json
+
+{
+    "title": "Do Exercise At 9:00 PM.",
+    "desc": "This task needs to be followed on alternate days.",
+    "date": "2021-03-23T21:33:58.335Z"
+}
+
+###
+GET http://localhost:1000/readtodos
+
+###
+GET http://localhost:1000/readtodo/605b6410eee86337cca3ada2
+
+###
+PUT http://localhost:1000/updatetodo/605b79e6eee86337cca3adab
+Content-Type: application/json
+
+{
+    "title": "Play Cricket At 5:00 PM.",
+    "desc": "Do follow this task on alternate days."
+}
+
+###
+DELETE http://localhost:1000/deletetodo/605b7c027bd935274c605202
